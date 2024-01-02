@@ -357,6 +357,9 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
+.section-getmore a:first-child:hover {
+  border-color: #172b90;
+}
 /* main */
 #main-img {
   width: 100%;
@@ -797,6 +800,9 @@ body {
   .btn-link {
     padding: 0;
     margin: 0;
+  }
+  #disnes-btn {
+    margin: 25px 0;
   }
 }
 @media (max-width: 425px) {
