@@ -130,9 +130,9 @@ body {
   .header-menu {
     text-align: center;
     position: relative;
-    max-width: 768px;
     left: 0;
     top: 0;
+    width: 100%;
   }
   .header-menu img:last-child {
     text-align: start;
@@ -306,7 +306,6 @@ body {
 }
 /* mySlides */
 .section {
-  height: 450px;
   position: relative;
   top: 100px;
 }
@@ -337,8 +336,7 @@ body {
   width: 100%;
 }
 .section-getmore {
-  margin-top: 35px;
-  margin-bottom: 20px;
+  margin: 2em 0;
 }
 .section-getmore a:last-child {
   font-size: 16px;
@@ -363,13 +361,15 @@ body {
 /* main */
 #main-img {
   width: 100%;
+  margin: 5em 0;
+  position: relative;
 }
 #main-text {
-  margin: 40px;
   display: flex;
   text-align: center;
   justify-content: center;
   opacity: 0.9;
+  font-size: 25px;
 }
 
 /* section-2 */
@@ -380,13 +380,12 @@ body {
   flex-wrap: wrap;
 }
 .section-item {
-  flex: 1 1 0;
-
   padding: 23px;
   padding-bottom: 30px;
   position: relative;
   text-align: center;
   justify-content: center;
+  width: 20%;
 }
 
 .content-arroy {
@@ -635,9 +634,9 @@ body {
   padding: 40px;
 }
 .fooser-boxs {
+  flex-wrap: wrap;
   display: flex;
   position: relative;
-  padding: 0 6em;
 }
 .section-about {
   flex: 1;
@@ -746,12 +745,28 @@ body {
   .slideshow-container img {
     width: 100%;
   }
+  .section-item {
+    padding: 0;
+  }
+  .section {
+    height: auto;
+  }
   .section-2 {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 1em;
+  }
+  .section-item {
+    width: 50%;
+  }
+  .main-img img {
+    margin: 0;
+    padding: 0;
+  }
+  #section-text {
+    font-size: 20px;
   }
   #togger-text {
-    font-size: 25px;
+    font-size: 22px;
     margin: 30px 0;
   }
   .header_btn {
@@ -774,7 +789,7 @@ body {
     margin: 0;
   }
   .shop-img {
-    margin: 100px;
+    margin: 20px;
   }
   .line {
     display: none;
@@ -789,7 +804,24 @@ body {
     margin: 10px;
   }
   .fooser-section {
-    padding-top: 10px;
+    padding-top: 5px;
+    margin: 2em 0 0 0;
+  }
+  .fooser-boxs {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+  }
+  .section-about {
+    width: 100%;
+    padding: 5px;
+    font-size: 42px;
+  }
+  .section-about:last-child {
+    padding: 50px;
+  }
+  .section-about button {
+    font-size: 20px;
   }
   .fooser-last {
     margin: 0;
@@ -805,66 +837,28 @@ body {
     margin: 25px 0;
   }
 }
-@media (max-width: 425px) {
+
+@media (max-width: 441px) {
   .header {
-    max-width: 425px;
+    width: 100%;
+    overflow: hidden;
   }
-  .section-2 {
-    display: flex;
-    flex-direction: column;
+  .header-menu {
+    text-align: start;
+    width: 70%;
   }
-  #togger-text {
-    font-size: 25px;
-    margin: 30px 0;
-  }
-  .header_btn {
-    padding: 10px 60px;
-    width: 30px;
-    font-size: 16px;
-    top: 20px;
-  }
-  #text-title {
-    width: 90%;
-  }
-  #main-text {
-    margin: 20px;
-  }
-  .content-arroy {
-    display: none;
-  }
-  #weebly-text {
-    margin: 1em 2em;
-  }
-  .shop-img {
-    margin: 100px;
-  }
-  .line {
-    display: none;
-  }
-  .fooser {
-    margin: 20px;
-  }
-  #fooser-title {
-    left: 10%;
-  }
-  #fooser-img {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  .bisnes-items {
-    margin: 10px;
+  .menu_icon {
+    width: 20%;
   }
   .fooser-section {
-    padding-top: 10px;
+    margin: 2em 0 0 0;
   }
-  .fooser-last {
-    margin: 0;
-  }
-  .logo-i {
-    margin: 0;
-  }
-  .btn-link {
+  .fooser-boxs {
+    display: flex;
+    width: 100%;
     padding: 0;
-    margin: 0;
+  }
+  .section-about:last-child {
+    padding: 20px;
   }
 }
