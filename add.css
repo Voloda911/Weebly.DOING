@@ -245,6 +245,7 @@ body {
     flex-direction: column;
   }
   .header_links li {
+    top: 20px;
     position: relative;
     width: 70%;
   }
@@ -738,6 +739,9 @@ body {
   }
   .burger {
     max-width: 768px;
+    height: 200vh;
+  }
+  .header-button:last-child {
   }
   .header-col {
     max-width: 768px;
@@ -795,7 +799,7 @@ body {
     display: none;
   }
   .fooser {
-    margin: 20px;
+    margin: 120px 20px 20px 20px;
   }
   #fooser-title {
     left: 10%;
@@ -836,6 +840,9 @@ body {
   #disnes-btn {
     margin: 25px 0;
   }
+  .section-btn {
+    left: 30%;
+  }
 }
 
 @media (max-width: 441px) {
@@ -847,6 +854,12 @@ body {
     text-align: start;
     width: 70%;
   }
+  .header-button:last-child {
+    padding: 0;
+    margin: 0 10px;
+    width: 40%;
+  }
+
   .menu_icon {
     width: 20%;
   }
@@ -860,5 +873,23 @@ body {
   }
   .section-about:last-child {
     padding: 20px;
+  }
+  .singUp {
+    text-align: center;
+    margin: 0;
+    width: 33%;
+  }
+}
+@media (max-width: 375px) {
+  .header-menu {
+    text-align: center;
+  }
+  .header-button:last-child {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .section-btn {
+    left: 0;
   }
 }
